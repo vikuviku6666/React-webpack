@@ -12,7 +12,7 @@ const config = {
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [new HtmlWebpackPlugin({template: './app/index.html'})],
-    mode: 'development',
+    mode: "development",
     devtool: "eval-cheap-source-map",
     devServer: {
         port: 8080,
@@ -31,7 +31,7 @@ const config = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: [['@babel/preset-env', {'useBuiltIns': 'usage', 'corejs': 3, 'targets': 'defaults'}], '@babel/preset-react']
+                        presets: [["@babel/preset-env", {"useBuiltIns": "usage", "corejs": 3, "targets": "defaults"}], "@babel/preset-react"]
                     }
                 }
             }
